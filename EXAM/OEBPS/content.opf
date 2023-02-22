@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:identifier id="uuid_id" opf:scheme="UUID">{0[uuid]}</dc:identifier>
+        <dc:title>{0[title]}</dc:title>
+        <dc:creator opf:role="aut">{0[creator]}</dc:creator>
+        <dc:language>zh</dc:language>
+        <dc:date opf:event="modification">{0[date]}</dc:date>
+        <dc:description>{0[description]}</dc:description>
+        <dc:rights>仅做个人使用，禁止用于商业用途。手机请用Lithium打开。</dc:rights>
+        <meta content="0.6.2" name="Sigil version"/>
+        <meta name="cover" content="cover.jpg"/>
+    </metadata>
+    <manifest>
+        <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+        {0[text]}
+        <item href="Styles/stylesheet1.css" id="stylesheet1.css" media-type="text/css"/>
+        <item href="Styles/stylesheet2.css" id="stylesheet2.css" media-type="text/css"/>
+        <item href="Styles/stylesheet3.css" id="stylesheet3.css" media-type="text/css"/>
+        <item href="Images/cover.jpg" id="cover.jpg" media-type="image/jpeg"/>
+        <item href="Images/note.png" id="note.png" media-type="image/png"/>
+        {0[image]}
+        <item href="Fonts/KFOkCnqEu92Fr1MmgVxIIzQ.68bb21d0.woff" id="KFOkCnqEu92Fr1MmgVxIIzQ.68bb21d0.woff" media-type="application/font-woff"/>
+        <item href="Fonts/KFOlCnqEu92Fr1MmEU9fBBc-.48af7707.woff" id="FOlCnqEu92Fr1MmEU9fBBc-.48af7707.woff" media-type="application/font-woff"/>
+        <item href="Fonts/KFOlCnqEu92Fr1MmSU5fBBc-.c2f7ab22.woff" id="FOlCnqEu92Fr1MmSU5fBBc-.c2f7ab22.woff" media-type="application/font-woff"/>
+        <item href="Fonts/KFOlCnqEu92Fr1MmWUlfBBc-.77ecb942.woff" id="KFOlCnqEu92Fr1MmWUlfBBc-.77ecb942.woff" media-type="application/font-woff"/>
+        <item href="Fonts/KFOlCnqEu92Fr1MmYUtfBBc-.f5677eb2.woff" id="KFOlCnqEu92Fr1MmYUtfBBc-.f5677eb2.woff" media-type="application/font-woff"/>
+        <item href="Fonts/KFOmCnqEu92Fr1Mu4mxM.f1e2a767.woff" id="KFOmCnqEu92Fr1Mu4mxM.f1e2a767.woff" media-type="application/font-woff"/>
+        {0[font]}
+    </manifest>
+    <spine toc="ncx">
+        {0[ncx]}
+    </spine>
+    <guide>
+        {0[guide]}
+     </guide>
+</package>
