@@ -4,6 +4,7 @@
 
 from Selenium import Selenium
 from Book import make_Book
+
 if __name__ == '__main__':
     url = 'https://www.lightnovel.app/book/info/12279'
     selenium = Selenium()

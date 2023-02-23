@@ -33,6 +33,7 @@ class Selenium():
         try:
             # 等待页面加载完成后再继续,只等待60秒
             Wait(self.driver, 60).until(EC.presence_of_element_located((By.CSS_SELECTOR, 'div[class="q-list q-list--separator"]')))
+            # 获取网页源码
             message_html = self.driver.find_element(By.CSS_SELECTOR, 'html').get_attribute('outerHTML')
             return message_html
         except TimeoutException:
@@ -48,6 +49,7 @@ class Selenium():
                 EC.presence_of_element_located((By.CSS_SELECTOR, 'div[class="html-reader read"]')))
             # 停10秒，防止频繁访问网页ip被封
             time.sleep(10)
+            # 获取网页源码
             content_html = self.driver.find_element(By.CSS_SELECTOR, 'html').get_attribute('outerHTML')
             return content_html
         except TimeoutException:
